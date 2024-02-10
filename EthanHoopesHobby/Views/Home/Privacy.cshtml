@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Downhill Skating Pricing";
+}
+<div class="text-center">
+    <h1 class="display-4">Downhill Skating Lesson with Ethan</h1>
+</div>
+
+<h4>
+    I offer lessons to those who want to break into the field of downhill skateboarding. Being one of the biggest adrenaline rushes of your life, I charge a reasonable price to help you discover what the field is about.
+    At just $25/lesson, I will provide everything except for a helemet to help you get going skating. If you'd like to know more, use my calculator below to see how much it'd cost for a day's outing on the street for however long you'd like to go!
+</h4>
+
+<div class="text-center">
+    <form id ="calculationForm">
+        <label for = "hours"># of Hours you'd like to skate:'</label>
+        <br />
+        <input type="number" id="hours" name="hours" min="1" max="10000">
+        <br />
+        <label for = "rate">My hourly rate in $:</label>
+        <br />
+        <input type="number" id="rate" name="rate" readonly value="25">
+        <br />
+        <button type = "submit">Submit</button>
+    </form>
+    <div id ="result"></div>
+</div>
+<!--
+    i need to use j query so that I can create a calculator to analyze from the form the different labels that will be entered given their datatypes
+-->
+<br />
+<br />
+<br />
+<img src ="~/downhilling.jpg" height="400" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="~/js/site.js"></script>
+
+
